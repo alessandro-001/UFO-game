@@ -3,9 +3,10 @@
 #include "ufo_functions.hpp"
 
 using namespace std;
+
 void greet() {
   cout << "=============" << endl;
-  cout << "UFO: The Game" << endl;
+  cout << "UFO: The Alien Abduction Game" << endl;
   cout << "=============" << endl;
   cout << "Instructions: save your friend from alien abduction by guessing the letters in the codeword." << endl;
 }
@@ -13,8 +14,8 @@ void greet() {
 int main() {
   greet();
 
-  std::string codeword = "ufogoaway";
-  std::string answer = "_________";
+  std::string codeword = "marsattack"; // has to be the same size
+  std::string answer = "__________";   // as the answer and viceversa
   int misses = 0;
 
   vector<char> incorrect;
